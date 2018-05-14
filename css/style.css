@@ -60,7 +60,7 @@ body {
 
 
 /*Icons*/
-.fab , .far{
+.fab {
 	text-decoration: none;
 	font-size: 24px;
 	padding: 1.5em;
@@ -68,7 +68,20 @@ body {
 }
 
 
-.fab:hover , .far:hover {
+.far {
+	text-decoration: none;
+	font-size: 24px;
+	padding: 1.5em;
+	color: #db7d59;
+}
+
+
+.fab:hover {
+	color: #b99d85; /*Beige*/
+}
+
+
+.far:hover {
 	color: #b99d85; /*Beige*/
 }
 
