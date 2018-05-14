@@ -3,13 +3,11 @@ body {
 	width: 100%;
 }
 /* Nav Bar */
-.navbar-nav {
-	
-}
 .nav-link {
 	text-transform: uppercase!important;
 	color: #b99d85!important;
 }
+
 .logo {
 	width: 100px!important;
 }
@@ -21,11 +19,17 @@ body {
     font-family: Raleway , Sans-serif;
     width: 100%;
 }
+
+.slash {
+	color: #db7d59"
+}
+
 .section-title {
 	text-transform: uppercase;
 	color: #b99d85;
 	font-family: Raleway , Sans-serif;
 }
+
 .container {
 	width: 100%;
 	padding-top: 24px;
@@ -36,25 +40,29 @@ body {
 .card-deck {
 	padding-bottom: 24px;
 }
+
 .card-title {
 
 }
+
 .btn {
 	background-color: #db7d59; /*Coral*/
 	color: white;
 }
+
 .btn:hover {
 	color: #384661;/*Dark Blue*/
 }
 
 /*Icons*/
-.fab , .far{
+.fab .far{
 	text-decoration: none;
 	font-size: 24px;
 	padding: 1.5em;
 	color: #db7d59;
 }
-.fab:hover, .far:hover, {
+
+.fab:hover .far:hover {
 	color: #b99d85; /*Beige*/
 }
 
