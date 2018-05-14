@@ -1,0 +1,74 @@
+body {
+	color: #384661!important;
+	width: 100%;
+}
+
+
+/* Nav Bar */
+.nav-link {
+	text-transform: uppercase!important;
+	color: #b99d85!important;
+}
+
+
+.logo {
+	width: 100px!important;
+}
+
+
+.jumbotron {
+    color: white!important;
+    font-family: Raleway , Sans-serif;
+    background-image: url(../img/header.jpg) !important;
+   	background-size: cover;
+}
+
+
+.slash {
+	color: #db7d59;
+}
+
+
+.section-title {
+	text-transform: uppercase;
+	color: #b99d85;
+	font-family: Raleway , Sans-serif;
+}
+
+
+.container {
+	width: 100%;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+
+/* Card Deck */
+.card-deck {
+	padding-bottom: 24px;
+}
+
+
+.btn {
+	background-color: #db7d59; /*Coral*/
+	color: white;
+}
+
+.btn:hover {
+	color: #384661;/*Dark Blue*/
+}
+
+
+/*Icons*/
+.fab , .far{
+	text-decoration: none;
+	font-size: 24px;
+	padding: 1.5em;
+	color: #db7d59;
+}
+
+
+.fab:hover , .far:hover {
+	color: #b99d85; /*Beige*/
+}
+
