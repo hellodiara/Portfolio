@@ -7,4 +7,5 @@ For this project, we were asked to build a portfolio website. We were provided a
 
 Once we had successfully replicated the design mockup, we were encouraged to continue tweaking and making customizations to the design to personalize it and make it our own.
 
+I used Bootstrap for my project.
 https://hellodiara.github.io/Portfolio/
