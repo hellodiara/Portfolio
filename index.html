@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Project 1: Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!--Bootstrap 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,7 +18,9 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-transparent">
-  <a class="navbar-brand" href="#home"><img class="logo" src="images/logo.png" alt="logo" /></a>
+  <a class="navbar-brand" href="#home">
+    <img class="logo" src="img/logo.png" alt="logo" />
+  </a>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item">
       <a class="nav-link" href="#about">About Me</a>
@@ -32,7 +34,7 @@
   </ul>
 </nav>
 <div class="jumbotron text-center">
-  <h1>Diara <span style="color: #db7d59">/</span> Bamba</h1>
+  <h1>Diara <span class="slash">/</span> Bamba</h1>
   <p>Front-End Developer</p> 
 </div>
 <!-- About me Section -->
@@ -40,7 +42,7 @@
   <div class="row">
     <div class="col-sm-12">
       <h3 class="section-title">About Me</h3>
-      <p>Hi, I'm Diara Bamba. I'm a NYC based Front-End Developer with a backgroudn in Digital Marketing.</p>
+      <p>Hi, I'm Diara Bamba. I'm a NYC based Front-End Developer with a background in Digital Marketing.</p>
     </div>
   </div>
 </section>
@@ -49,61 +51,61 @@
   <div class="row">
     <div class="col-sm-12">
       <h3 class="section-title">Projects</h3>
-      <p>This is a selection of projecst I've worked on.</p>
+      <p>This is a selection of projects I've worked on.</p>
     </div>
   </div>
 </section>
 <!-- Card Deck -->
 <section class="card-deck mx-auto">
   <div class="card" style="width:400px">
-    <img class="card-img-top" src="images/Animal-card.png" alt="Animal Card">
+    <img class="card-img-top" src="img/Animal-card.png" alt="Animal Card">
     <div class="card-body text-center">
-    <h4 class="card-title">Animal Card</h4>
-    <p class="card-text">Some example text.</p>
-    <a href="#" class="btn">View</a>
+    <h4 class="card-title">Animal Trading Card</h4>
+    <p class="card-text">First HTML project for Udacity Front-End Nanodegre</p>
+    <a href="https://codepen.io/hellodiara/pen/mXpPWM" class="btn">View</a>
     </div>
   </div>
   <div class="card" style="width:400px">
-    <img class="card-img-top" src="images/pixel-art-maker.png" alt="pixel_art_maker">
+    <img class="card-img-top" src="img/pixel-art-maker.png" alt="pixel_art_maker">
     <div class="card-body text-center">
     <h4 class="card-title">Pixel Art Maker</h4>
-    <p class="card-text">Some example text.</p>
-    <a href="#" class="btn">View</a>
+    <p class="card-text"> HTML, CSS , Javascript web app that allows users to create a grid of square, and apply colors to those squares to create pixel art</p>
+    <a href="https://codepen.io/hellodiara/pen/xWLORw" class="btn">View</a>
     </div>
   </div>
   <div class="card" style="width:400px">
-    <img class="card-img-top" src="images/ecommerce-shop.png" alt="E-commerce Shop">
+    <img class="card-img-top" src="img/ecommerce-shop.png" alt="E-commerce Shop">
     <div class="card-body text-center">
     <h4 class="card-title">E-commerce Shop</h4>
     <p class="card-text">Some example text.</p>
-    <a href="#" class="btn">View</a>
+    <a href="https://codepen.io/hellodiara/pen/pLxrKg" class="btn">View</a>
     </div>
   </div>
 </section> <!-- End Card Deck -->
 <!-- 2nd Card Deck -->
 <section class="card-deck mx-auto">
     <div class="card" style="width:400px">
-    <img class="card-img-top" src="images/restaurant.png" alt="Restaurant">
+    <img class="card-img-top" src="img/restaurant.png" alt="Restaurant">
     <div class="card-body text-center">
     <h4 class="card-title">Restaurant</h4>
     <p class="card-text">Some example text.</p>
-    <a href="#" class="btn">View</a>
+    <a href="https://codepen.io/hellodiara/pen/LddMoG" class="btn">View</a>
     </div>
   </div>
     <div class="card" style="width:400px">
-    <img class="card-img-top" src="images/tourist-destination.png" alt="Tourist Destination">
+    <img class="card-img-top" src="img/tourist-destination.png" alt="Tourist Destination">
     <div class="card-body text-center">
     <h4 class="card-title">Tourist Destination</h4>
     <p class="card-text">Some example text.</p>
-    <a href="#" class="btn">View</a>
+    <a href="https://codepen.io/hellodiara/pen/vRdvJX" class="btn">View</a>
     </div>
   </div>
     <div class="card" style="width:400px">
-    <img class="card-img-top" src="images/book-autor-website.png" alt="Book Author Website">
+    <img class="card-img-top" src="img/book-autor-website.png" alt="Book Author Website">
     <div class="card-body text-center">
     <h4 class="card-title">Book Author Website</h4>
     <p class="card-text">Some example text.</p>
-    <a href="#" class="btn">View</a>
+    <a href="https://codepen.io/hellodiara/pen/bvKRKX" class="btn">View</a>
     </div>
   </div>
 </section>
@@ -118,6 +120,8 @@
       <a href="mailto:diarabamba@gmail.com"><i class="far fa-envelope"></i></a>
     </div>
 </section>
-<footer class="footer container text-center"><p>© Copyright 2018 Diara Bamba. All rights reserved.</p></footer>
+<footer class="footer container text-center">
+  <p>© Copyright 2018 Diara Bamba. All rights reserved.</p>
+</footer>
 </body>
 </html>
