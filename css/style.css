@@ -48,9 +48,18 @@ body {
 	padding-bottom: 24px;
 }
 
+.card-img-top {
+	min-height: 280px;
+	max-height: 280px;
+}
 
 .btn {
 	background-color: #db7d59; /*Coral*/
+	color: white;
+}
+
+#repo {
+	background-color: #b99d85; /*Beige*/
 	color: white;
 }
 
