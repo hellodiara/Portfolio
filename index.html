@@ -2,26 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Project 1: Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!--Bootstrap 4-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
     <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans|Sonsie+One|Raleway" rel="stylesheet" type="text/css">
     <!--Font Awesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-transparent">
-  <a class="navbar-brand" href="#home">
-    <img class="logo" src="img/logo.png" alt="logo" />
+<!-- navbar -->  
+<nav id="nav" class="navbar fixed-top navbar-expand-sm" data-spy="affix">
+  <div class="container">
+  <a href="#home" class="navbar-brand">
+    <img class="logo" src="img/logo.png" alt="logo"/>
   </a>
-  <ul class="navbar-nav ml-auto">
+  <ul class="nav navbar-nav ml-auto">
     <li class="nav-item">
       <a class="nav-link" href="#about">About Me</a>
     </li>
@@ -32,11 +31,16 @@
       <a class="nav-link" href="#contact">Contact Me</a>
     </li>
   </ul>
+  </div>
 </nav>
-<div class="jumbotron text-center">
-  <h1>Diara <span class="slash">/</span> Bamba</h1>
-  <p>Front-End Developer</p> 
-</div>
+<!-- navbar -->
+
+<section class="first text-center">
+  <div class="container name-title">
+    <h1 class="name">Diara <span class="slash">/</span> Bamba</h1>
+    <p>Front-End Developer</p> 
+  </div>
+</section>
 <!-- About me Section -->
 <section id="about" class="container text-center">
   <div class="row">
@@ -46,96 +50,292 @@
     </div>
   </div>
 </section>
+<!-- What I Do Section -->
+<!-- <section id="what-i-do" class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <h3 class="section-title">What I Do</h3>
+    </div>
+    <div class="col-sm-6">
+      <h5 class="subsection-title">Web Development</h5>
+      <p>Web development is the perfect mixture of creativity (UI design) and structure (code). It's a skill that I am continuously growing. As a recent graduate of George Washington University's Full Stack Web Development program, it's usually what I'm doing in my free time.</p>
+    </div>
+    <div class="col-sm-6">
+      <h5 class="subsection-title">Project/Product Management</h5>
+      <p>Web development is the perfect mixture of creativity (UI design) and structure (code). It's a skill that I am continuously growing. As a recent graduate of George Washington University's Full Stack Web Development program, it's usually what I'm doing in my free time.</p>
+    </div>
+  </div>
+</section> -->
+
 <!-- Projects Section -->
 <section id="projects" class="container text-center">
   <div class="row">
     <div class="col-sm-12">
       <h3 class="section-title">Projects</h3>
       <p>This is a selection of projects I've worked on.</p>
-    </div>
-  </div>
-</section>
-<!-- Card Deck -->
-<section class="card-deck mx-auto">
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/Animal-card.png" alt="Animal Card">
-    <div class="card-body text-center">
-    <h4 class="card-title">Animal Trading Card</h4>
-    <a href="https://hellodiara.github.io/Animal-Card/" class="btn">Live View</a>
-    <a href="https://github.com/hellodiara/memory-card-game" class="btn" id="repo">Repo</a>
-    </div>
-  </div>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/pixel-art-maker.png" alt="pixel_art_maker">
-    <div class="card-body text-center">
-    <h4 class="card-title">Pixel Art Maker</h4>
-    <a href="https://hellodiara.github.io/Pixel-Art-Maker/" class="btn">Live View</a>
-    <a href="https://github.com/hellodiara/Pixel-Art-Maker" class="btn" id="repo">Repo</a>
-    </div>
-  </div>
-  <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/memory-card-game.png" alt="Memory Card Game">
-    <div class="card-body text-center">
-    <h4 class="card-title">Memory Card Game</h4>
-    <a href="https://hellodiara.github.io/memory-card-game/" class="btn">Live View</a>
-    <a href="https://github.com/hellodiara/memory-card-game" class="btn" id="repo">Repo</a>
-    </div>
-  </div>
-</section> <!-- End Card Deck -->
-<!-- 2nd Card Deck -->
-<section class="card-deck mx-auto">
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/random-quote-generator.png" alt="Random Quote">
-    <div class="card-body text-center">
-    <h4 class="card-title">Random Quote Generator</h4>
-    <a href="https://hellodiara.github.io/Random-Quote-Machine/" class="btn">Live View</a>
-    <a href="https://github.com/hellodiara/Random-Quote-Machine" class="btn" id="repo">Repo</a>
-    </div>
-  </div>
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/arcade-game-screenshot.png" alt="Arcade Game">
-    <div class="card-body text-center">
-    <h4 class="card-title">Frogger Arcade game</h4>
-    <a href="https://hellodiara.github.io/arcade-game/" class="btn">Live View</a>
-    <a href="https://github.com/hellodiara/arcade-game" class="btn" id="repo">Repo</a>
-    </div>
-  </div>
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/book-autor-website.png" alt="Book Author Website">
-    <div class="card-body text-center">
-    <h4 class="card-title">Book Author Website</h4>
-    <a href="https://codepen.io/hellodiara/pen/bvKRKX" class="btn">Live View</a>
 
-    </div>
-  </div>
-</section>
-<!-- End 2nd Card Deck -->
+      <ul class="nav nav-pills mb-3 text-center" id="pills-tab" role="tablist">
 
-<!-- 3rd Card Deck -->
-<section class="card-deck mx-auto">
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/restaurant.png" alt="Restaurant">
-    <div class="card-body text-center">
-    <h4 class="card-title">Restaurant</h4>
-    <a href="https://codepen.io/hellodiara/pen/LddMoG" class="btn">Live View</a>
-    </div>
-  </div>
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/tourist-destination.png" alt="Tourist Destination">
-    <div class="card-body text-center">
-    <h4 class="card-title">Tourist Destination</h4>
-    <a href="https://codepen.io/hellodiara/pen/vRdvJX" class="btn">Live View</a>
-    </div>
-  </div>
-    <div class="card" style="width:400px">
-    <img class="card-img-top" src="img/product-site.png" alt="Product Site">
-    <div class="card-body text-center">
-    <h4 class="card-title">Product Site</h4>
-    <a href="https://codepen.io/hellodiara/pen/wmmRZp" class="btn">Live View</a>
-    </div>
-  </div>
-</section>
-<!-- End 3rd Card Deck -->
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-javascript-tab" data-toggle="pill" href="#pills-javascript" role="tab" aria-controls="pills-javascript" aria-selected="false">JavaScript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-react-tab" data-toggle="pill" href="#pills-react" role="tab" aria-controls="pills-react" aria-selected="false">React</a>
+        </li>        
+        <li class="nav-item">
+          <a class="nav-link" id="pills-websites-tab" data-toggle="pill" href="#pills-websites" role="tab" aria-controls="pills-websites-tab" aria-selected="false">Websites</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-design-tab" data-toggle="pill" href="#pills-design" role="tab" aria-controls="pills-design" aria-selected="false">UI UX / Design</a>
+        </li>
+      </ul>
+
+<!-- TABS CONTENT -->
+      <div class="tab-content" id="pills-tabContent">
+
+        <div class="tab-pane fade show active" id="pills-javascript" role="tabpanel" aria-labelledby="pills-javascript-tab">
+          <section class="card-deck mx-auto">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/pixel-art-maker.png" alt="pixel_art_maker">
+              <div class="card-body text-center">
+              <h4 class="card-title">Pixel Art Maker</h4>
+              <p class="card-text">Web app that allows user to create a grid of squares representing their design, and apply colors to those squares to create a digital masterpiece!</p>
+              <a href="https://hellodiara.github.io/Pixel-Art-Maker/" class="btn btn-outline-primary">Live View</a>
+              <a href="https://github.com/hellodiara/Pixel-Art-Maker" class="btn btn btn-outline-secondary" id="repo">Repo</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">HTML</a>
+                <a href="#" class="badge badge-light">CSS</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+<!--end card 1 -->
+          <div class="card" style="width:400px">
+            <img class="card-img-top" src="img/memory-card-game.png" alt="Memory Card Game">
+            <div class="card-body text-center">
+            <h4 class="card-title">Memory Card Game</h4>
+            <p class="card-text">Built a complete browser-based card matching game (also known as Concentration). Features a random shuffle, a timer, pop-up modal, restart option, move counter, and a star rating. </p>
+
+            <a href="https://hellodiara.github.io/memory-card-game/" class="btn btn-outline-primary">Live View</a>
+            <a href="https://github.com/hellodiara/memory-card-game" class="btn btn-outline-secondary" id="repo">Repo</a>
+            </div>
+            <div class="card-footer text-muted text-center">
+              <a href="#" class="badge badge-light">HTML</a>
+              <a href="#" class="badge badge-light">CSS</a>
+              <a href="#" class="badge badge-light">JavaScript</a>
+            </div>
+          </div>
+<!--end card 2 -->
+        </section>
+
+        <section class="card-deck mx-auto">
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/random-quote-generator.png" alt="Random Quote">
+              <div class="card-body text-center">
+              <h4 class="card-title">Random Quote Generator</h4>
+               <p class="card-text">Built a complete browser-based card matching game (also known as Concentration). Features a random shuffle, a timer, pop-up modal, restart option, move counter, and a star rating. </p>
+              <a href="https://hellodiara.github.io/Random-Quote-Machine/" class="btn btn-outline-primary">Live View</a>
+              <a href="https://github.com/hellodiara/Random-Quote-Machine" class="btn btn-outline-secondary" id="repo">Repo</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">HTML</a>
+                <a href="#" class="badge badge-light">CSS</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+              <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/arcade-game-screenshot.png" alt="Arcade Game">
+              <div class="card-body text-center">
+              <h4 class="card-title">Frogger Arcade game</h4>
+               <p class="card-text"> An HTML5 Canvas powered video game, developed using the best practices in Object Oriented JavaScript.</p>
+              <a href="https://hellodiara.github.io/arcade-game/" class="btn btn-outline-primary">Live View</a>
+              <a href="https://github.com/hellodiara/arcade-game" class="btn btn-outline-secondary" id="repo">Repo</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">HTML</a>
+                <a href="#" class="badge badge-light">CSS</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+<!-- REACT TAB -->
+        <div class="tab-pane fade" id="pills-react" role="tabpanel" aria-labelledby="pills-react-tab">
+          <section class="card-deck mx-auto">
+      <!--card 1 -->
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/React-neighborhood-map.png" alt="Neighborhood-map">
+              <div class="card-body text-center">
+              <h4 class="card-title">React Neighborhood Map</h4>
+              <p class="card-text">Single page map application using React and the Google Maps API. Integrated a third-party data API (Foursquare) and made the app accessible and usable offline.</p>
+              <a href="https://github.com/hellodiara/React-neighborhood-map" class="btn btn btn-outline-secondary" id="repo">Repo</a>
+              </div>
+               <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">React</a>
+                <a href="#" class="badge badge-light">API</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+      <!-- card 2 -->
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/MyReads.png" alt="MyReads-app">
+              <div class="card-body text-center">
+                <h4 class="card-title">MyReads: A Book Lending App</h4>
+                <p class="card-text">Responsive web application that allows users to select and categorize books into a virtual bookshelf. Leveraged React to support a dynamic user interface that interacts with an API server and client library.</p>
+                <a href="https://github.com/hellodiara/react-project-mybooks" class="btn btn btn-outline-secondary" id="repo">Repo</a>
+              </div>
+               <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">React</a>
+                <a href="#" class="badge badge-light">API</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+            </section>
+        </div>
+
+<!-- WESBITES TAB -->
+        <div class="tab-pane fade" id="pills-websites" role="tabpanel" aria-labelledby="pills-websites">
+          <section class="card-deck mx-auto">
+        <!--card 1 -->
+            <div class="card" style="width:400px">
+            <img class="card-img-top" src="img/book-autor-website.png" alt="Book Author Website">
+            <div class="card-body text-center">
+            <h4 class="card-title">Book Author Website</h4>
+            <p class="card-text">Fictional book author site created using Bootstrap. Features a carousel slider and smooth scrolling.</p>
+            <a href="https://codepen.io/hellodiara/full/bvKRKX" class="btn btn-outline-primary">Live View</a>
+            <a href="https://codepen.io/hellodiara/pen/bvKRKX" class="btn btn-outline-secondary" id="repo">Code</a>
+            </div>
+            <div class="card-footer text-muted text-center">
+              <a href="#" class="badge badge-light">HTML</a>
+              <a href="#" class="badge badge-light">CSS</a>
+              <a href="#" class="badge badge-light">JavaScript</a>
+              <a href="#" class="badge badge-light">Bootstrap</a>
+            </div>
+          </div>
+         <!-- card 2 -->
+             <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/restaurant.png" alt="Restaurant">
+              <div class="card-body text-center">
+              <h4 class="card-title">Restaurant</h4>
+              <p class="card-text">Sample Restaurant website with carousel slides and smooth scrolling.</p>
+              <a href="https://codepen.io/hellodiara/full/LddMoG/" class="btn btn-outline-primary">Live View</a>
+              <a href="https://codepen.io/hellodiara/pen/LddMoG" class="btn btn-outline-secondary" id="repo">Code</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">HTML</a>
+                <a href="#" class="badge badge-light">CSS</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+        </section>
+
+          <section class="card-deck mx-auto">
+
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/photographer.png" alt="Photographer">
+              <div class="card-body text-center">
+              <h4 class="card-title">Photographer</h4>
+              <p class="card-text">Minimalist Photographer's website with left side push navigation and responsive images.</p>
+              <a href="https://codepen.io/hellodiara/full/pLQowZ/" class="btn btn-outline-primary">Live View</a>
+              <a href="https://codepen.io/hellodiara/pen/pLQowZ" class="btn btn-outline-secondary" id="repo">Code</a>
+              </div>
+
+              <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">HTML</a>
+                <a href="#" class="badge badge-light">CSS</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="https://github.com/hellodiara/Sheridan-landing-page/raw/master/img/sheridan-desktop.png" alt="Stamp Landing page">
+              <div class="card-body text-center">
+              <h4 class="card-title">Landing Page</h4>
+               <p class="card-text">Responsive and minimalist landing page with sign-up form and password show/hide feature.</p>
+              <a href="https://hellodiara.github.io/Sheridan-landing-page" class="btn btn-outline-primary">Live View</a>
+              <a href="https://github.com/hellodiara/Sheridan-landing-page" class="btn btn-outline-secondary" id="repo">Code</a>
+              </div>
+              <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">HTML</a>
+                <a href="#" class="badge badge-light">CSS</a>
+                <a href="#" class="badge badge-light">JavaScript</a>
+              </div>
+            </div>
+            
+          </section> 
+
+        </div>
+<!-- DESIGN TAB -->
+        <div class="tab-pane fade" id="pills-design" role="tabpanel" aria-labelledby="pills-design-tab">
+          <section class="card-deck mx-auto">
+
+             <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/WeddingApp.png" alt="Wedding-app">
+              <div class="card-body text-center">
+              <h4 class="card-title">Wedding App </h4>
+              <p class="card-text">UI/ UX design and prototyping for a mobile wedding platform app</p>
+              <a href="img/1Portfolio-page_3-4-final.pdf"class="btn btn-outline-primary" >View</a>
+              </div>
+               <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">UI/UX</a>
+                <a href="#" class="badge badge-light">Design</a>
+                <a href="#" class="badge badge-light">Sketch</a>
+                <a href="#" class="badge badge-light">Prototype</a>
+              </div>
+            </div>
+      <!-- card 2 -->
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/WordpressBlog.png" alt="MyReads-app">
+              <div class="card-body text-center">
+                <h4 class="card-title">Wordpress Fashion Blog</h4>
+                <p class="card-text">Graphic Design and Wordpress development for fashion blog.</p>
+                <a href="img/8Portfolio-page_16-17.pdf"class="btn btn-outline-primary" >View</a>
+              </div>
+               <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">Design</a>
+                <a href="#" class="badge badge-light">Wordpress</a>
+              </div>
+            </div>
+
+          </section>
+
+          <section class="card-deck mx-auto">
+
+             <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/HaircareBrand.png" alt="Neighborhood-map">
+              <div class="card-body text-center">
+              <h4 class="card-title">Title</h4>
+              <p class="card-text">Text.</p>
+              <a href="img/2Portfolio-page_4-5.pdf"class="btn btn-outline-primary" >View</a>
+              </div>
+               <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">Branding</a>
+                <a href="#" class="badge badge-light">Design</a>
+              </div>
+            </div>
+      <!-- card 2 -->
+            <div class="card" style="width:400px">
+              <img class="card-img-top" src="img/HarlemCrafts.png" alt="MyReads-app">
+              <div class="card-body text-center">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text.</p>
+                <a href="img/3Portfolio-page_6-7.pdf"class="btn btn-outline-primary" >View</a>
+
+              </div>
+               <div class="card-footer text-muted text-center">
+                <a href="#" class="badge badge-light">Branding</a>
+                <a href="#" class="badge badge-light">Design</a>
+              </div>
+            </div>
+
+          </section>
+        </div>
+
+          </div> <!-- End tab section -->
+        </div>
+      </div>
+    </section>
+
 <section id="contact" class="container text-center">
   <h3 class="section-title">Get in Touch</h3>
   <div class="social">
@@ -149,5 +349,12 @@
 <footer class="footer container text-center">
   <p>© Copyright 2018 Diara Bamba. All rights reserved.</p>
 </footer>
+<script src="js/script.js" type="text/javascript"></script>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/navbar.js" type="text/javascript"></script>
 </body>
 </html>
